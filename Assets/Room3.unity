@@ -647,3 +647,18 @@ SceneRoots:
   - {fileID: 756192408}
   - {fileID: 2092139010}
   - {fileID: 1249617921}
+warning: in the working copy of 'Assets/Samples/XR Interaction Toolkit/3.4.1/Hands Interaction Demo/Materials/Unity_Hand_Medium.mat', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/Settings/Project Configuration/Quality URP Config.asset', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/VRTemplateAssets/Materials/Locomotion/BlinkLine.mat', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/XR/AndroidXR/AndroidXRSettingsInitializer', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Assets/XR/Settings/OpenXRPackageSettings.asset', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'ProjectSettings/EditorBuildSettings.asset', LF will be replaced by CRLF the next time Git touches it
+Assets/Samples/XR Interaction Toolkit/3.4.1/Hands Interaction Demo/Materials/Unity_Hand_Medium.mat
+Assets/Settings/Project Configuration/Quality URP Config.asset
+Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+Assets/VRTemplateAssets/Materials/Locomotion/BlinkLine.mat
+Assets/XR/AndroidXR/AndroidXRSettingsInitializer
+Assets/XR/Settings/OpenXRPackageSettings.asset
+My project (5).slnx
+ProjectSettings/EditorBuildSettings.asset
