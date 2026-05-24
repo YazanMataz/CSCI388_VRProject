@@ -9,6 +9,7 @@ public class InventoryManager : MonoBehaviour
     [Header("Inventory")]
     public bool hasDrawerKey = false;
     public bool hasRoomKey = false;
+    public bool hasRoom1Completed = false;
 
     [Header("UI")]
     public TextMeshProUGUI messageText;
@@ -38,7 +39,7 @@ public class InventoryManager : MonoBehaviour
         ShowMessage("You have obtained the Room Key!");
     }
 
-    public void ShowMessage(string message, float xOffset = 0f)
+    public void ShowMessage(string message, float xOffset = 0f, float? durationOverride = null)
     {
         if (messageText == null) return;
 
@@ -54,15 +55,15 @@ public class InventoryManager : MonoBehaviour
             StopCoroutine(messageCoroutine);
         }
 
-        messageCoroutine = StartCoroutine(ShowMessageRoutine(message));
+        messageCoroutine = StartCoroutine(ShowMessageRoutine(message, durationOverride ?? messageDuration));
     }
 
-    IEnumerator ShowMessageRoutine(string message)
+    IEnumerator ShowMessageRoutine(string message, float duration)
     {
         messageText.text = message;
         messageText.gameObject.SetActive(true);
 
-        yield return new WaitForSeconds(messageDuration);
+        yield return new WaitForSeconds(duration);
 
         messageText.gameObject.SetActive(false);
     }
