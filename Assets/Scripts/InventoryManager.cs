@@ -31,12 +31,27 @@ public class InventoryManager : MonoBehaviour
     {
         hasDrawerKey = true;
         ShowMessage("You obtained Drawer Key!");
+        CheckAllKeys();
     }
 
     public void GetRoomKey()
     {
         hasRoomKey = true;
         ShowMessage("You have obtained the Room Key!");
+        CheckAllKeys();
+    }
+
+    void CheckAllKeys()
+    {
+        if (hasDrawerKey && hasRoomKey)
+        {
+            Invoke("LoadNext", 2f);
+        }
+    }
+
+    void LoadNext()
+    {
+        GameManager.Instance.LoadNextRoom();
     }
 
     public void ShowMessage(string message, float xOffset = 0f, float? durationOverride = null)

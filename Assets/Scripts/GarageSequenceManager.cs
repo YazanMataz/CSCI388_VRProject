@@ -60,6 +60,8 @@ public class GarageSequenceManager : MonoBehaviour
             successUI.SetActive(true);
         else
             Debug.LogError("Success UI is not assigned.");
+
+        GameManager.Instance.LoadNextRoom();
     }
 
     private void ShowMessage(string message)

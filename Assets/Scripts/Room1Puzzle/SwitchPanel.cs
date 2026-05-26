@@ -199,9 +199,10 @@ namespace Room1Puzzle
             Room1NoteDisplay.EnsureExists().ShowFeedback(successMessage, successMessageDuration, keepAfterDuration: true);
 
             if (InventoryManager.Instance != null)
-                InventoryManager.Instance.hasRoom1Completed = true;
+            InventoryManager.Instance.hasRoom1Completed = true;
 
-            UnlockDoor();
+        UnlockDoor();
+        GameManager.Instance.LoadNextRoom();
         }
 
         void UnlockDoor()
